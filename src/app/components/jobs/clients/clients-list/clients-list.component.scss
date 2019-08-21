@@ -1,0 +1,280 @@
+.page {
+  font-family: 'Rubik', sans-serif;
+}
+
+/////////////////// header ///////////////////
+
+.athenaLogo {
+  width: 10%;
+  margin-top: -1%;
+  margin-left: -1.5%;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.5;
+}
+
+.triangleDroit {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 160px solid #FB8215;
+  border-left: 800px solid transparent;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+}
+.triangleGauche {
+  display : inline-block;
+  height : 0;
+  width : 0;
+  border-top : 295px solid #fbb062;
+  border-right : 1472px solid transparent;
+  position: relative;
+  z-index: 3;
+}
+
+
+/********* NAV *********/
+.iconeNav {
+  width: 60%;
+}
+.nav {
+  width: 35%;
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  z-index: 10;
+  margin-top: 3.5%;
+  margin-left: 11%;
+}
+
+
+/////////////////// main ///////////////////
+
+.containerSearch {
+  width: 600px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 4%;
+  margin: auto;
+}
+
+input {
+  width: 300px;
+  height: 25px;
+  text-align: center;
+  border: none;
+  border-bottom: #FB8215 1px solid;
+  //border-radius: 15px 15px 15px 15px;
+  color: #fb8215;
+}
+.btnEssai {
+  width: 300px;
+  background-color: #FBB062;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10%;
+  border: 1px solid #FB8215;
+  padding: 5px 68px 5px 68px;
+}
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+.titreCategorie {
+  width: 320px;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  padding: 4px 4px 4px 4px;
+  border:1px solid #BF5805;
+  background-color: #BF5805;
+  border-radius: 0px 6px 0px 6px;
+}
+.categorieDashboard {
+  margin-top: -150px;
+  margin-left: 1100px;
+}
+hr {
+  border: none;
+  height: 1px;
+  width: 154px;
+  background-color: #BF5805;
+  margin-top: -80px;
+  margin-right: 0px;
+}
+
+
+/*------------ Cartes Clients ------------*/
+.cartesList {
+  //font-family: 'Rubik', sans-serif;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3%;
+  margin: auto;
+}
+.cartesClients{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 150px;
+  height: 200px;
+  margin-top: 28px;
+  margin-right: 25px;
+  margin-left: 25px;
+  border-radius: 0px 0px 6px 6px;
+  border: 1px solid  #FBB062;
+}
+.imageClient > img {
+  width: 150px;
+  height: 112px;
+  object-fit: contain;
+  border-bottom: #FBB062 solid 1px;
+}
+.nomEntreprise {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(73, 73, 73);
+  margin-left: 5px;
+  //padding-left: 10px;
+}
+.cartOne {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.blockquote {
+  //font-family: 'Rubik', sans-serif;
+  color: rgb(58, 58, 58);
+  font-size: 0.8em;
+  margin-top: 8px;
+  margin-left: 15px;
+  border-left: 1px solid #FBB062;
+  padding-left: 7px;
+}
+
+
+/////////////////// footer ///////////////////
+
+.triangleBleuBas {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-right: 1600px solid transparent;
+  border-bottom: 49px solid #FB8215;
+  margin-top: 5%;
+}
+
+/////////////////// VERSION IPAD ///////////////////
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .triangleGauche {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 180px solid #fbb062;
+    border-right: 900px solid transparent;
+  }
+  .triangleDroit {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 90px solid #FB8215;
+    border-left: 332px solid transparent;
+  }
+  .categorieDashboard {
+    margin-top: -90px;
+    margin-left: 655px;
+  }
+  .titreCategorie {
+    width: 230px;
+    text-align: center;
+    font-size: 2em;
+  }
+  hr {
+    width: 130px;
+    margin-top: -56px;
+  }
+  .containerSearch {
+    padding-top: 6%;
+  }
+  .triangleBleuBas {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-right: 1024px solid transparent;
+    border-bottom: 49px solid #FB8215;
+    margin-top: 5%;
+  }
+}
+
+/////////////////// VERSION MOBILE ///////////////////
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .triangleGauche {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 180px solid #fbb062;
+    border-right: 346px solid transparent;
+  }
+  .triangleDroit {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 90px solid #FB8215;
+    border-left: 243px solid transparent;
+  }
+  .athenaLogo {
+    width: 23%;
+    margin-top: -1%;
+    margin-left: -3%;
+  }
+  .nav {
+    visibility: hidden;
+  }
+  .categorieDashboard {
+    margin-top: -70px;
+    margin-left: 150px;
+  }
+  .titreCategorie {
+    width: 170px;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  hr {
+    width: 45px;
+    margin-top: -43px;
+  }
+  .containerSearch {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  input {
+    width: 281px;
+  }
+  .cartesList {
+    //font-family: 'Rubik', sans-serif;
+    width: 373px;
+  }
+  .cartesClients {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  .triangleBleuBas {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-right: 375px solid transparent;
+    border-bottom: 49px solid #FB8215;
+    margin-top: 5%;
+  }
+}

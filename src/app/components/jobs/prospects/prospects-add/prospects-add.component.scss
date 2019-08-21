@@ -1,0 +1,252 @@
+.page {
+  font-family: 'Rubik', sans-serif;
+}
+
+/////////////////// header ///////////////////
+
+
+.athenaLogo {
+  width: 9%;
+  margin-top: 3%;
+  margin-left: 3%;
+  position: absolute;
+  z-index: 4;
+}
+
+.triangleDroit {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 160px solid #FB8215;
+  border-left: 800px solid transparent;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+}
+.triangleGauche {
+  display : inline-block;
+  height : 0;
+  width : 0;
+  border-top : 295px solid #fbb062;
+  border-right : 1472px solid transparent;
+  position: relative;
+  z-index: 3;
+}
+
+
+/////////////////// main ///////////////////
+
+.titreCategorie {
+  width: 200px;
+  text-align: center;
+  font-size: 1.3em;
+  color: #BF5805;
+  padding: 4px 4px 4px 4px;
+  border:1px solid #BF5805;
+  background-color: white;
+  border-radius: 0px 6px 0px 6px;
+}
+.categorieDashboard {
+  margin-top: -100px;
+  margin-left: 1079px;
+}
+hr {
+  border: none;
+  height: 1px;
+  width: 295px;
+  background-color: #BF5805;
+  margin-top: -36px;
+  margin-right: 0px;
+}
+
+/*------------ Formulaire ------------*/
+
+.formulaire{
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5%;
+  padding: 1.5rem;
+  border: #FB8215 1px solid;
+  box-shadow: 0px 0px 10px 1px #c1a17e;
+  border-radius: 0px 0px 20px 20px;
+}
+.champForm {
+  width: 350px;
+  height: 25px;
+  border: none;
+  border-bottom: #FB8215 1px solid;
+  color: #fb8215;
+  margin-bottom: 10px;
+}
+.champLabel {
+  color: #BF5805;
+  font-size: 13px;
+}
+.btnEnregistrer {
+  width: 350px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  background-color: #FBB062;
+  border: none;
+  border: #FB8215 1px solid;
+  padding: 4px 10px 4px 10px;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+/*------------ Cartes Clients ------------*/
+.cartesList {
+  //font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  top: 35%;
+}
+.cartesClients{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 150px;
+  height: 200px;
+  margin-top: 28px;
+  border-radius: 0px 0px 6px 6px;
+  border: 1px solid  #FBB062;
+}
+.imageClient > img {
+  width: 150px;
+  height: 112px;
+  object-fit: contain;
+  border-bottom: #FBB062 solid 1px;
+}
+.nomEntreprise {
+  font-size: 1em;
+  font-weight: bold;
+  color: rgb(73, 73, 73);
+  padding-left: 10px;
+}
+.cartOne {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.blockquote {
+  //font-family: 'Rubik', sans-serif;
+  color: rgb(58, 58, 58);
+  font-size: 0.8em;
+  margin-top: 8px;
+  margin-left: 15px;
+  border-left: 1px solid #FBB062;
+  padding-left: 7px;
+}
+
+
+/////////////////// footer ///////////////////
+
+.triangleBleuBas {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-right: 1565px solid transparent;
+  border-bottom: 49px solid #FB8215;
+  margin-top: 5%;
+}
+
+/******************** RESPONSIVE ********************/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .triangleGauche {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 180px solid #fbb062;
+    border-right: 900px solid transparent;
+  }
+  .triangleDroit {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 90px solid #FB8215;
+    border-left: 332px solid transparent;
+  }
+  .athenaLogo {
+    width: 8%;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+  .categorieDashboard {
+    margin-left: 700px;
+  }
+  hr {
+    width: 155px;
+  }
+  .triangleBleuBas {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-right: 1024px solid transparent;
+    border-bottom: 49px solid #FB8215;
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .triangleGauche {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 180px solid #fbb062;
+    border-right: 346px solid transparent;
+  }
+  .triangleDroit {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 90px solid #FB8215;
+    border-left: 243px solid transparent;
+  }
+  .athenaLogo {
+    width: 18%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .categorieDashboard {
+    margin-top: -60px;
+    margin-left: 150px;
+  }
+  hr {
+    width: 55px;
+  }
+  .champForm {
+    width: 280px;
+  }
+  .btnEnregistrer {
+    width: 280px;
+  }
+  .triangleBleuBas {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-right: 375px solid transparent;
+    border-bottom: 49px solid #FB8215;
+    margin-top: 5%;
+  }
+  .formulaire{
+    width: 0px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5%;
+    padding: 1.5rem;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+
+}

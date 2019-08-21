@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="963.449" viewBox="0 0 1025 963.449">
+  <defs>
+    <style>
+      .cls-1-fond-ipad {
+        fill: #860e04;
+        stroke: #707070;
+      }
+    </style>
+  </defs>
+  <path id="Tracé_fond_ipad" data-name="Tracé fond ipad" class="cls-1-fond-ipad" d="M0,954.577V-7.772H1024V767.514Z" transform="translate(0.5 8.272)"/>
+</svg>

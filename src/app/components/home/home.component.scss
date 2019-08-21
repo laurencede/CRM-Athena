@@ -1,0 +1,301 @@
+.site-content {
+  margin-top: 650px;
+}
+.page {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  height: 100vh;
+}
+
+// .page
+// {
+//    background-image: url('src/assets/images/fondDegrade.svg');
+//    background-repeat: no-repeat;
+//    height: 100%;
+// }
+// .page
+// {
+//    background-image: url('src/assets/images/triangleOrangeDH.svg');
+//    background-repeat: no-repeat;
+//    height: 100%;
+// }
+
+
+/////////////////// dashboard général ///////////////////
+
+//.triangleDroitOrange {
+//    width: 258px;
+//    height: 61.87px;
+//    position: absolute;
+//    z-index: 1;
+//    top: 100%;
+//    right: 0%;
+//}
+.rectangle {
+  width: 100%;
+  height: 800px;
+  background-color: #860e04;
+  position: absolute;
+  z-index: -1;
+}
+
+.fondImage{
+  position: absolute;
+  width: 374.667px;
+  height: 758.667px;
+  top:0;
+  z-index: 2;
+}
+.containerLogo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 30%;
+}
+.athena{
+  width: 50%;
+  top: 15%;
+  left: 30%;
+  position: absolute;
+  z-index: 10;
+}
+img {
+  width: 60%;
+}
+.slogan{
+  font-size: 1.2em;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  padding-top: 4%;
+}
+.btnConnexInscript {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding-top: 44%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  border: 1px solid #BF5805;
+  padding: 5px 10px 5px 10px;
+}
+
+/////////////////// qui sommes nous ? ///////////////////
+// main {
+//     position: absolute;
+// }
+.aPropos{
+  font-size: 1em;
+  text-align: center;
+  margin-top: 20px;
+}
+//**************** icônes ****************//
+.icones{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: white;
+  height: 135px;
+  margin-top: 40px;
+}
+.dimIcone {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #09CDFF;
+  border-radius: 50px;
+  margin: 3%;
+  text-align: center;
+  font-size: 10px;
+}
+
+//**************** Description Gens ****************//
+.personnes {
+  height: 410px;
+}
+.nomPrenom {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 6%;
+}
+.containerAthenien {
+  padding-top: 120px;
+}
+.athenienDescript {
+  display: flex;
+  text-align: center;
+}
+.rondGrand {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #09CDFF;
+  border-radius: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  margin: auto;
+  margin-top: 17%;
+}
+.description {
+  text-align: center;
+  font-style: italic;
+  color: rgb(78, 78, 78);
+}
+
+//**************** triangle bleu et orange ****************//
+
+.triangleOG {
+  position: absolute;
+  z-index: 3;
+  padding-top: 15px;
+}
+.triangleBD {
+  position: absolute;
+  z-index: 2;
+  padding-top: 63px;
+}
+.triangleOD {
+  position: absolute;
+  z-index: 1;
+  padding-top: 112px;
+  padding-left: 115px;
+}
+
+//**************** Abonnement Offres ****************//
+// .articleAbonnement {
+//     padding-top: 150px;
+// }
+h2 {
+  margin-top: 150px;
+}
+
+.formAbonnement {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 50px;
+}
+.offre {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  // height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Varela Round', sans-serif;
+}
+.formule {
+  width: 200px;
+  display: block;
+  flex-direction: column;
+
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  padding: 1rem;
+  border: 1px solid #0973FF;
+  border-radius: 0px 20px 20px 20px;
+  background-color: white;
+  box-shadow: 0 0 9px #BBBBBB;
+}
+.offreTitre {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2em;
+  // text-align: left;
+  color: #FB8215;
+
+}
+hr {
+  width: 185px;
+  border: none;
+  border-bottom: 1px solid #FBB062;
+  // background-color: #FBB062;
+}
+.offreDescription {
+  width: 200px;
+  font-size: 0.9em;
+  text-align: left;
+  color: rgb(78, 78, 78);
+
+  margin-top: 8%;
+  margin-left: 9%;
+}
+.notePetit {
+  text-align: center;
+  color:  rgb(78, 78, 78);
+  font-size: 0.8em;
+  padding-top: -10px;
+}
+.prix {
+  font-size: 1.7em;
+  font-weight: 900;
+  padding-top: 10%;
+}
+.btnEssai {
+  padding: 6px 6px 6px 6px;
+  margin-top: 17%;
+  font-size: 16px;
+  font-weight: bold;
+  // font:bold 13px Arial;
+  background: #FB8215;
+  color:white;
+  border-radius: 8px;
+  width:150px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 3px #999;
+}
+
+/////////////////// footer ///////////////////
+.site-footer {
+  margin-top: 50px;
+}
+.coordonnees {
+  font-size: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+  position: absolute;
+  z-index: 2;
+}
+.fondContact {
+  position: absolute;
+  z-index: 1;
+}
+
+/////////////////// VERSION IPAD ///////////////////
+@media screen and (min-width: 1024px){
+  .athena{
+    width: 40%;
+    top: 10%;
+  }
+  .fondImage{
+    width: 1024px;
+    margin-top: -1050px;
+  }
+  .triangleDroitOrange {
+    width: 650px;
+  }
+  .slogan{
+    font-size: 2em;
+    padding-top: 4%;
+  }
+  .btnConnexInscript {
+    display: flex;
+    justify-content: center;
+    padding-top: 14%;
+  }
+  .connexion {
+    margin-left: 11px;
+    margin-right: 11px;
+  }
+
+}

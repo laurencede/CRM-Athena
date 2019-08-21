@@ -1,0 +1,299 @@
+.page {
+  font-family: 'Rubik', sans-serif;
+}
+
+/////////////////// header ///////////////////
+
+.athenaLogo {
+  width: 9%;
+  margin-top: 3%;
+  margin-left: 3%;
+  position: absolute;
+  z-index: 4;
+}
+
+.triangleDroit {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 160px solid #FB8215;
+  border-left: 800px solid transparent;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+}
+.triangleGauche {
+  display : inline-block;
+  height : 0;
+  width : 0;
+  border-top : 295px solid #fbb062;
+  border-right : 1472px solid transparent;
+  position: relative;
+  z-index: 3;
+}
+
+/////////////////// main ///////////////////
+
+.titreCategorie {
+  width: 179px;
+  text-align: center;
+  font-size: 1.3em;
+  color: #BF5805;
+  padding: 4px 4px 4px 4px;
+  border:1px solid #BF5805;
+  background-color: white;
+  border-radius: 0px 6px 0px 6px;
+}
+.categorieDashboard {
+  margin-top: -100px;
+  margin-left: 1100px;
+}
+hr {
+  border: none;
+  height: 1px;
+  width: 295px;
+  background-color: #BF5805;
+  margin-top: -36px;
+  margin-right: 0px;
+}
+
+/* ---------- description société ---------- */
+
+.dashboard {
+  display: flex;
+  margin: auto;
+  width: 222px;
+}
+.nomSociete {
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  color: #860e04;
+  padding: 8px 0px 8px 3px;
+  border-bottom: #860e04 1px solid;
+  margin-top: 70px;
+}
+.logoSociete {
+  width: 220px;
+  height: 150px;
+  margin: auto;
+  margin-top: 30px;
+  border: #FBB062 1px solid;
+}
+.conteneur {
+  width: 60%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 1%;
+  padding: 1rem;
+  //border: #FB8215 1px solid;
+  background-color: white;
+  box-shadow: 0px 0px 10px 1px #c1a17e;
+  border-radius: 0px 0px 20px 20px;
+}
+.containerLogoAdressBtn {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: #FBB062 solid 1px;
+}
+
+.adresse {
+  color: #424242;
+  width: 375px;
+  height: auto;
+  margin-top: 20px;
+  text-align: center;
+
+}
+.containerContact {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.nomContact {
+  width: 60%;
+  font-size: 16px;
+  color: #424242;
+  background-color: #FBB062;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: #FB8215 2px solid;
+  margin: auto;
+  padding: 1rem;
+}
+.styleContact {
+  color: #424242;
+  width: 240px;
+  margin: auto;
+  margin-top: 15px;
+  padding-left: 10px;
+  height: auto;
+  border-bottom: #fbdba9 1px solid;
+}
+.containerBtn {
+  width: 300px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.btnModifier {
+  background-color: #FBB062;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  //margin-top: 10%;
+  border: 1px solid #FB8215;
+  padding: 5px 38px 5px 38px;
+}
+.btnSupprimer {
+  background-color: #FBB062;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  //margin-top: 10%;
+  border: 1px solid #FB8215;
+  padding: 5px 30px 5px 30px;
+}
+a {
+  text-decoration: none;
+}
+.btnEssai {
+  width: 240px;
+  background-color: #FBB062;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+
+  border: 1px solid #FB8215;
+  padding: 5px 3px 5px 3px;
+}
+
+
+/////////////////// footer ///////////////////
+
+.triangleBleuBas {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-right: 1565px solid transparent;
+  border-bottom: 49px solid #FB8215;
+  margin-top: 5%;
+}
+
+/******************** RESPONSIVE ********************/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .triangleGauche {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 180px solid #fbb062;
+    border-right: 900px solid transparent;
+  }
+  .triangleDroit {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 90px solid #FB8215;
+    border-left: 332px solid transparent;
+  }
+  .athenaLogo {
+    width: 8%;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+  .categorieDashboard {
+    margin-left: 700px;
+  }
+  hr {
+    width: 155px;
+  }
+  .nomContact {
+    width: 80%;
+  }
+  .conteneur {
+    width: 80%;
+    margin-top: 2%;
+  }
+  .triangleBleuBas {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-right: 1024px solid transparent;
+    border-bottom: 49px solid #FB8215;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .triangleGauche {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 180px solid #fbb062;
+    border-right: 346px solid transparent;
+  }
+  .triangleDroit {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 90px solid #FB8215;
+    border-left: 243px solid transparent;
+  }
+  .athenaLogo {
+    width: 18%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .categorieDashboard {
+    margin-top: -60px;
+    margin-left: 150px;
+  }
+  hr {
+    width: 55px;
+  }
+  .conteneur {
+    width: 80%;
+    margin-top: 4%;
+    box-shadow: none;
+    border-radius: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .containerContact {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 15%;
+  }
+  .triangleBleuBas {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-right: 375px solid transparent;
+    border-bottom: 49px solid #FB8215;
+    margin-top: 5%;
+  }
+}
+
+

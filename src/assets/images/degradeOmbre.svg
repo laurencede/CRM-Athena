@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="407.667" height="791.667" viewBox="0 0 407.667 791.667">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        filter: url(#Tracé_160);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.178" r="0.524" gradientTransform="translate(-0.512 -0.012) scale(2.025 1.066)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#09fff7"/>
+      <stop offset="1" stop-color="#042b85"/>
+    </radialGradient>
+    <filter id="Tracé_160" x="0" y="0" width="407.667" height="791.667" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feFlood flood-opacity="0.722"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Tracé_160-2" data-name="Tracé 160" class="cls-1" d="M0,0H374.667V666.667L0,758.667Z" transform="translate(16.5 16.5)"/>
+  </g>
+</svg>

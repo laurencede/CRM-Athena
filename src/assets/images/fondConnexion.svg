@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="407.666" height="700.5" viewBox="0 0 407.666 700.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        filter: url(#Soustraction_1);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="0.286" cy="0.142" r="0.596" gradientTransform="translate(-0.223 0.009) scale(1.782 0.938)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#09fff7"/>
+      <stop offset="1" stop-color="#042b85"/>
+    </radialGradient>
+    <filter id="Soustraction_1" x="0" y="0" width="407.666" height="700.5" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feFlood flood-opacity="0.722"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Soustraction_1-2" data-name="Soustraction 1" class="cls-1" d="M868.272,667.5H497V0H871.666V666.667Z" transform="translate(-480.5 16.5)"/>
+  </g>
+</svg>

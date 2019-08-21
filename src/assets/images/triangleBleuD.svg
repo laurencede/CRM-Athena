@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="139.505" viewBox="0 0 375 139.505">
+  <defs>
+    <style>
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.912" y2="2.055" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#09cdff"/>
+      <stop offset="1" stop-color="#0852b4"/>
+    </linearGradient>
+  </defs>
+  <path id="Tracé_169" data-name="Tracé 169" class="cls-3" d="M373.479,1315.375l-375,48.243,375,91.263Z" transform="translate(1.521 -1315.375)"/>
+</svg>

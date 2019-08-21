@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="374.667" height="758.667" viewBox="0 0 374.667 758.667">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.178" r="0.524" gradientTransform="translate(-0.512 -0.012) scale(2.025 1.066)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#09fff7"/>
+      <stop offset="1" stop-color="#042b85"/>
+    </radialGradient>
+  </defs>
+  <path id="Tracé_160" data-name="Tracé 160" class="cls-1" d="M0,0H374.667V666.667L0,758.667Z"/>
+</svg>

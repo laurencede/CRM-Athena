@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="306.625" viewBox="0 0 375 306.625">
+  <defs>
+    <style>
+      .cls-110 {
+        fill: url(#radialGradientContact);
+      }
+    </style>
+    <radialGradient id="radialGradientContact" cx="0.808" cy="0.849" r="1.2" gradientTransform="matrix(-0.79, -0.259, 0.219, -0.999, 1.26, 1.905)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#09cdff"/>
+      <stop offset="0.515" stop-color="#0973ff"/>
+      <stop offset="1" stop-color="#032450"/>
+    </radialGradient>
+  </defs>
+  <path id="Tracé_161_contact" data-name="Tracé 161 Contact" class="cls-110" d="M375,0H0V269.442l375,37.183Z" transform="translate(375 306.625) rotate(180)"/>
+</svg>

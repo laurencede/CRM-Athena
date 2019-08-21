@@ -1,0 +1,67 @@
+.main {
+  font-family: 'Rubik', sans-serif;
+}
+.couleurFond {
+  width: 375px;
+  height: 960px;
+  background-color: #FB8215;
+}
+.chouetteAthena {
+  width: 72%;
+  height: auto;
+
+  opacity: 0.5;
+}
+.champForm {
+  width: 280px;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  border: 0;
+  border-bottom: 1px solid #FBB062;
+  background-color: transparent;
+  margin-bottom: 35px;
+}
+.connexion {
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.containerEssaiGratuit {
+  height: 70px;
+}
+.btnEssai {
+  cursor: pointer;
+  text-align: center;
+  margin-top: 8%;
+}
+a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px 5px 10px;
+}
+
+/////////////////// VERSION IPAD ///////////////////
+@media screen and (min-width: 1024px){
+  .couleurFond {
+    width: 1024px;
+    height: 768px;
+    background-color:#FB8215;
+  }
+  .chouetteAthena {
+    width: 50%;
+    height: auto;
+    opacity: 0.5;
+  }
+  .connexion {
+    width: 300px;
+    margin-top: -47%;
+    margin-left: 60%;
+  }
+}
