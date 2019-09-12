@@ -19,22 +19,19 @@
 
     <div class="nav">
       <div>
-        <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+        <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/home.svg" class="iconeNavOK"/></a>
       </div>
       <div>
-        <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+        <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/stat.svg" class="iconeNavOK" class="select"/></a>
       </div>
       <div>
-        <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/iconeClients.svg" class="iconeNav"/></a>
+        <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/client.svg" class="iconeNavOK"/></a>
       </div>
       <div>
-        <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/iconeProspect.svg" class="iconeNav"/></a>
+        <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/prospect.svg" class="iconeNavOK"/></a>
       </div>
       <div>
-        <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/iconeAgenda.svg" class="iconeNav"/></a>
-      </div>
-      <div>
-        <a href="#" [routerLink]="'/parametres'"><img src="/assets/images/iconeParam.svg" class="iconeNav"/></a>
+        <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/agenda.svg" class="iconeNavOK"/></a>
       </div>
     </div>
 
@@ -58,23 +55,120 @@
         <div class="contenuDashboard">
           <div class="boxChiffre">
             <div>Chiffre d'affaires du mois en €</div>
-            <div class="chiffre"></div>
+            <div class="chiffre" [countUp]="33549"></div>
           </div>
           <div class="boxChiffre">
             <div>Nouveaux clients du mois</div>
-            <div class="chiffre"></div>
+            <div class="chiffre" [countUp]="30"></div>
           </div>
           <div class="boxChiffre">
             <div>Nouveaux prospects du mois</div>
-            <div class="chiffre"></div>
+            <div class="chiffre" [countUp]="12"></div>
+          </div>
+          <div class="boxChiffre">
+            <div>Taux de conversion en %</div>
+            <div class="chiffre" [countUp]="28"></div>
           </div>
         </div>
       </article>
 
       <article class="conteneurGraph">
-        <div class="graph"></div>
-        <div class="graph"></div>
-        <div class="graph"></div>
+        <div class="graph">
+          <div class="titreGraph">Nombre de clients et prospects par année</div>
+          <div style="display: block">
+            <canvas baseChart
+                    [datasets]="barChartData"
+                    [labels]="barChartLabels"
+                    [options]="barChartOptions"
+                    [legend]="barChartLegend"
+                    [chartType]="barChartType">
+            </canvas>
+          </div>
+          <div class="sepGraph"></div>
+        </div>
+
+        <div class="graph">
+          <div class="titreGraph">Chiffres par clients par trimestre</div>
+          <div style="display: block">
+            <canvas baseChart
+                    [datasets]="radarChartData"
+                    [labels]="radarChartLabels"
+                    [chartType]="radarChartType">
+            </canvas>
+          </div>
+          <div class="sepGraph"></div>
+        </div>
+
+        <div class="graph">
+          <div class="titreGraph">Evolution du chiffre d'affaires par client au trimestre</div>
+          <div style="display: block">
+            <canvas baseChart
+                    [chartType]="'line'"
+                    [datasets]="chartData"
+                    [labels]="chartLabels"
+                    [options]="chartOptions"
+                    [legend]="true"
+                    (chartClick)="onChartClick($event)">
+            </canvas>
+          </div>
+          <div class="sepGraph"></div>
+        </div>
+
+        <div class="graph">
+          <div class="titreGraph">Ventes réalisées à l'année par trimestre</div>
+          <div style="display: block">
+            <canvas baseChart
+                    [data]="doughnutChartData"
+                    [labels]="doughnutChartLabels"
+                    [chartType]="doughnutChartType">
+            </canvas>
+          </div>
+          <div class="sepGraph"></div>
+        </div>
+
+        <div class="graph">
+          <div class="titreGraph">Ventes par source</div>
+          <div style="display: block;">
+            <canvas baseChart
+                    [data]="pieChartData"
+                    [labels]="pieChartLabels"
+                    [chartType]="pieChartType"
+                    [options]="pieChartOptions"
+                    [plugins]="pieChartPlugins"
+                    [legend]="pieChartLegend">
+            </canvas>
+          </div>
+          <div class="sepGraph"></div>
+        </div>
+
+        <div class="graph">
+          <div class="titreGraph">Chiffres par Clients</div>
+          <div style="display: block;">
+            <canvas baseChart
+                    [datasets]="bubbleChartData"
+                    [options]="bubbleChartOptions"
+                    [colors]="bubbleChartColors"
+                    [legend]="bubbleChartLegend"
+                    [chartType]="bubbleChartType">
+            </canvas>
+          </div>
+          <div class="sepGraph"></div>
+        </div>
+      </article>
+
+      <section>
+        <article>
+          <div class="categorieAgenda">
+            <p class="titreAgenda">Carte</p>
+            <hr>
+          </div>
+        </article>
+      </section>
+
+      <article>
+        <div class="agenda">
+          <div class="map" id="frugalmap"></div>
+        </div>
       </article>
     </section>
   </main>

@@ -19,22 +19,19 @@
 
   <div class="nav">
     <div>
-      <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/home.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/stat.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/iconeClients.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/client.svg" class="iconeNavOK" class="select"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/iconeProspect.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/prospect.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/iconeAgenda.svg" class="iconeNav"/></a>
-    </div>
-    <div>
-      <a href="#" [routerLink]="'/parametres'"><img src="/assets/images/iconeParam.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/agenda.svg" class="iconeNavOK"/></a>
     </div>
   </div>
 
@@ -59,7 +56,10 @@
     <article>
       <div class="containerSearch">
         <div class="champSearch">
-          <input type="search" placeholder="rechercher une entreprise ou un client"/>
+          <input [(ngModel)]="searchText" type="search" placeholder="rechercher une entreprise ou un client"/>
+          <ul *ngFor="let data of dataset | filter: searchText">
+          <li>{{ data }}</li>
+          </ul>
         </div>
         <div class="ajout">
           <a href="#" [routerLink]="'/addClient'" class="btnEssai">ajouter un client</a>
@@ -68,79 +68,49 @@
     </article>
   </section>
 
-  <section>
+  <section [@contactsAnimation]="state">
     <article class="cartesList">
-      <div class="cartesClients" [ngClass]="{blue: hover}">
+      <div class="cartesClients">
         <div class="imageClient">
           <img src="/assets/images/brioche.jpg">
         </div>
         <div class="nomEntreprise">
-          <a href="#" [routerLink]="'/client'" class="nomEntreprise">Brioche Boulangerie</a></div>
+          <a href="#" [routerLink]="'/client'" class="nomEntreprise">La Brioche</a></div>
         <div class="cartOne" class="blockquote">
-          <div>Mr Dupont Fred</div>
-          <div>06 02 05 04 08</div>
+          <div>Mr Dupont Fred</div><!--name firstname contact-->
+          <div>06 02 05 04 08</div><!--tel contact-->
         </div>
       </div>
       <div class="cartesClients">
         <div class="imageClient">
-          <img src="/assets/images/plombier.jpeg">
+          <img src="/assets/images/mangez_moi.jpg">
         </div>
-        <div class="nomEntreprise">Technicien des Fluides</div>
+        <div class="nomEntreprise">
+          <a href="#" [routerLink]="'/client'" class="nomEntreprise">La Gondole</a></div>
         <div class="cartOne" class="blockquote">
-          <div>Mr Dupont Fred</div> <!--interlocuteur principal-->
-          <div>06 02 05 04 08</div>
-        </div>
-      </div>
-      <div class="cartesClients">
-        <div class="imageClient">
-          <img src="/assets/images/brioche.jpg">
-        </div>
-        <div class="nomEntreprise">Brioche Boulangerie</div>
-        <div class="cartOne" class="blockquote">
-          <div>Mr Dupont Fred</div>
-          <div>06 02 05 04 08</div>
+          <div>Mr Samson Patrick</div>
+          <div>03 20 55 66 79</div>
         </div>
       </div>
       <div class="cartesClients">
         <div class="imageClient">
           <img src="/assets/images/brioche.jpg">
         </div>
-        <div class="nomEntreprise">Brioche Boulangerie</div>
+        <div class="nomEntreprise">
+          <a href="#" [routerLink]="'/client'" class="nomEntreprise">Mangez-moi</a></div>
         <div class="cartOne" class="blockquote">
-          <div>Mr Dupont Fred</div>
-          <div>06 02 05 04 08</div>
+          <div>Mr Bonnet Christophe</div>
+          <div>03 20 55 66 81</div>
         </div>
       </div>
-      <div class="cartesClients">
-        <div class="imageClient">
-          <img src="/assets/images/brioche.jpg">
-        </div>
-        <div class="nomEntreprise">Brioche Boulangerie</div>
-        <div class="cartOne" class="blockquote">
-          <div>Mr Dupont Fred</div>
-          <div>06 02 05 04 08</div>
-        </div>
-      </div> <div class="cartesClients">
-      <div class="imageClient">
-        <img src="/assets/images/brioche.jpg">
-      </div>
-      <div class="nomEntreprise">Brioche Boulangerie</div>
-      <div class="cartOne" class="blockquote">
-        <div>Mr Dupont Fred</div>
-        <div>06 02 05 04 08</div>
-      </div>
-    </div> <div class="cartesClients">
-      <div class="imageClient">
-        <img src="/assets/images/brioche.jpg">
-      </div>
-      <div class="nomEntreprise">Brioche Boulangerie</div>
-      <div class="cartOne" class="blockquote">
-        <div>Mr Dupont Fred</div>
-        <div>06 02 05 04 08</div>
-      </div>
-    </div>
 
 
+      <div class="exportClients">
+        <div>Exporter vos clients sous format EXCEL</div>
+        <div>
+          <button class="buttonExport"(click)="exportAsXLSX()">Exporter</button>
+        </div>
+      </div>
     </article>
   </section>
 </main>

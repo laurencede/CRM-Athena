@@ -47,6 +47,22 @@
   margin-top: 3.5%;
   margin-left: 11%;
 }
+.iconeNavOK {
+  width: 60%;
+  border-radius: 50px;
+  background-color: #FBB062;
+  border-image-outset: white 2px solid;
+}
+.select {
+  width: 60%;
+  border-radius: 50px;
+  box-shadow: white 0px 0px 30px 1px;
+  background-color: white;
+}
+.iconeNavOK:hover {
+  box-shadow: white 0px 0px 30px 1px;
+  background-color: white;
+}
 
 /////////////////// main ///////////////////
 
@@ -91,12 +107,15 @@ hr {
 }
 .chiffre {
   width: 140px;
-  height: 50px;
+  height: 25px;
+  font-size: 20px;
+  color: white;
   border-radius: 5px 0px 5px 0px;
   background-color: #FB8215;
+  padding: 5px 5px 5px 5px;
 }
 .conteneurGraph {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -104,9 +123,47 @@ hr {
   margin-top: 5%;
 }
 .graph {
-  width: 300px;
+  width: 425px;
   height: 250px;
-  background-color: #c288cc;
+  margin-bottom: 5%;
+}
+.titreGraph {
+  text-align: center;
+  color: white;
+  padding: 0.3rem;
+  background-color: #fb8215;
+  margin-bottom: 20px;
+}
+.sepGraph {
+  width: 425px;
+  height: 1px;
+  background-color: #FBB062;
+  margin-top: 15px;
+}
+.categorieAgenda {
+  margin-left: 1100px;
+}
+.titreAgenda {
+  width: 320px;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  padding: 4px 4px 4px 4px;
+  border:1px solid #BF5805;
+  background-color: #BF5805;
+  border-radius: 0px 6px 0px 6px;
+}
+.agenda {
+  width: 70%;
+  height: 500px;
+  margin: auto;
+  margin-top: 5%;
+  background-color: #BF5805;
+  border-radius: 3%;
+}
+.map{
+  width: 100%;
+  height: 500px;
 }
 
 
@@ -213,7 +270,7 @@ hr {
   }
   hr {
     width: 45px;
-    margin-top: -43px;
+    margin-top: -38px;
   }
   .contenuDashboard {
     margin-top: 40px;

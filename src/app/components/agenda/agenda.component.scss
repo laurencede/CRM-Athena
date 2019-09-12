@@ -48,6 +48,22 @@
   margin-top: 3.5%;
   margin-left: 11%;
 }
+.iconeNavOK {
+  width: 60%;
+  border-radius: 50px;
+  background-color: #FBB062;
+  border-image-outset: white 2px solid;
+}
+.iconeNavOK:hover {
+  box-shadow: white 0px 0px 30px 1px;
+  background-color: white;
+}
+.select {
+  width: 60%;
+  border-radius: 50px;
+  box-shadow: white 0px 0px 30px 1px;
+  background-color: white;
+}
 
 /////////////////// main ///////////////////
 
@@ -80,6 +96,11 @@ hr {
   flex-direction: column;
   margin: auto;
   text-align: center;
+}
+.agendaPage {
+  width: 95%;
+  margin: auto;
+  margin-top: 8%;
 }
 
 /////////////////// footer ///////////////////

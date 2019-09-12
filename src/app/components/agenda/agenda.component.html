@@ -22,22 +22,19 @@
 
     <div class="nav">
       <div>
-        <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+        <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/home.svg" class="iconeNavOK"/></a>
       </div>
       <div>
-        <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+        <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/stat.svg" class="iconeNavOK"/></a>
       </div>
       <div>
-        <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/iconeClients.svg" class="iconeNav"/></a>
+        <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/client.svg" class="iconeNavOK"/></a>
       </div>
       <div>
-        <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/iconeProspect.svg" class="iconeNav"/></a>
+        <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/prospect.svg" class="iconeNavOK"/></a>
       </div>
       <div>
-        <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/iconeAgenda.svg" class="iconeNav"/></a>
-      </div>
-      <div>
-        <a href="#" [routerLink]="'/parametres'"><img src="/assets/images/iconeParam.svg" class="iconeNav"/></a>
+        <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/agenda.svg" class="iconeNavOK" class="select"/></a>
       </div>
     </div>
     <div class="bandeauTriangles">
@@ -59,29 +56,8 @@
     </section>
     <section>
       <article>
-        <div class="contenuDashboard">
-          <div>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-          </div>
-          <div>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-          </div>
-          <div>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-          </div>
-          <div>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-            <p>fdvhqdfvbqfiupgerpvzb eripvbepbvebv</p>
-          </div>
+        <div class="agendaPage">
+            <ejs-schedule></ejs-schedule>
         </div>
       </article>
     </section>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #860e04;
+      }
+
+      .cls-2 {
+        fill: #860e04;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_225" data-name="Groupe 225" transform="translate(-1676 -456)">
+    <g id="Ellipse_48" data-name="Ellipse 48" class="cls-1" transform="translate(1676 456)">
+      <circle class="cls-4" cx="84.5" cy="84.5" r="84.5"/>
+      <circle class="cls-5" cx="84.5" cy="84.5" r="84"/>
+    </g>
+    <g id="Groupe_224" data-name="Groupe 224">
+      <circle id="Ellipse_42" data-name="Ellipse 42" class="cls-2" cx="75" cy="75" r="75" transform="translate(1686 466)"/>
+      <path id="Tracé_181" data-name="Tracé 181" class="cls-3" d="M300.459,231.546l15.313,15.3v-7.228h7.146v14.271l17.427,17.56H325.516v38.976H275.172V271.447H260.861l39.6-39.9M300.49,225h0a6.625,6.625,0,0,0-4.8,1.836l-39.629,39.73a6.878,6.878,0,0,0,4.8,11.7h7.49v32a7.011,7.011,0,0,0,6.849,6.972h50.385a6.928,6.928,0,0,0,6.752-6.972v-32h8.007a6.926,6.926,0,0,0,4.821-11.746l-15.427-15.45v-11.5a6.583,6.583,0,0,0-6.862-6.451h-7.043a6.636,6.636,0,0,0-3.481.8l-7.067-7.009a6.7,6.7,0,0,0-4.8-1.912Z" transform="translate(1459.911 269)"/>
+    </g>
+  </g>
+</svg>

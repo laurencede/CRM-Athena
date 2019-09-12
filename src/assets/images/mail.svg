@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #860e04;
+      }
+
+      .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #860e04;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_228" data-name="Groupe 228" transform="translate(-1062 -747)">
+    <g id="mail" transform="translate(839.019 729.586)">
+      <rect id="Rectangle_89" data-name="Rectangle 89" class="cls-1" width="69.078" height="49.287" transform="translate(272.931 77.322)"/>
+      <g id="Groupe_227" data-name="Groupe 227" transform="translate(267.981 72.414)">
+        <g id="_7" data-name="7" transform="translate(0 0)">
+          <g id="Groupe_226" data-name="Groupe 226">
+            <path id="Tracé_252" data-name="Tracé 252" class="cls-2" d="M337.093,72.414H277.854a9.874,9.874,0,0,0-9.873,9.873V121.78a9.874,9.874,0,0,0,9.873,9.873h59.239a9.874,9.874,0,0,0,9.873-9.873V82.287A9.874,9.874,0,0,0,337.093,72.414Zm2.468,4.937-32.088,24.683L275.386,77.351ZM272.918,121.78V82.287l22.215,17.278-21.98,23.641A4.866,4.866,0,0,1,272.918,121.78Zm3.838,4.806,22.276-23.735,8.442,6.378,8.079-6.42,22.639,23.775C337.836,126.664,277.111,126.664,276.756,126.585Zm65.039-3.377-21.98-23.644,22.214-17.278V121.78A4.9,4.9,0,0,1,341.795,123.209Z" transform="translate(-267.981 -72.414)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Ellipse_47" data-name="Ellipse 47" class="cls-3" transform="translate(1062 747)">
+      <circle class="cls-4" cx="84.5" cy="84.5" r="84.5"/>
+      <circle class="cls-5" cx="84.5" cy="84.5" r="84"/>
+    </g>
+  </g>
+</svg>

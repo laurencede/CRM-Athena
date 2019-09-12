@@ -8,11 +8,11 @@
       <div class="triangleDroit"></div>
       <div class="triangleGauche"></div>
     </div>
-    </header>
+  </header>
 
     <main>
         <section class="conteneurIcones">
-            <article class="boxIcones">
+            <article class="boxIcones" [@icone1Animation]="state">
                 <div>
                   <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/iconeStat.svg" class="icone"/></a>
                 </div>
@@ -22,7 +22,7 @@
             <article>
               <div class="petitRond"></div>
             </article>
-            <article class="boxIcones">
+            <article class="boxIcones" [@icone2Animation]="state">
               <div>
                 <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/iconeClients.svg" class="icone"/></a>
               </div>
@@ -32,7 +32,7 @@
             <article>
               <div class="petitRond"></div>
             </article>
-            <article class="boxIcones">
+            <article class="boxIcones" [@icone3Animation]="state">
               <div>
                 <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/iconeProspect.svg" class="icone"/></a>
               </div>
@@ -42,13 +42,13 @@
             <article>
               <div class="petitRond"></div>
             </article>
-            <article class="boxIcones">
+            <article class="boxIcones" [@icone4Animation]="state">
               <div>
                 <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/iconeAgenda.svg" class="icone"/></a>
               </div>
               <div class="nomCategorie">agenda</div>
             </article>
-
+<!--
             <article>
               <div class="petitRond"></div>
             </article>
@@ -58,6 +58,7 @@
               </div>
               <div class="nomCategorie">paramètres</div>
             </article>
+-->
         </section>
     </main>
 

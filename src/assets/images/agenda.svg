@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: #860e04;
+      }
+
+      .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #860e04;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_221" data-name="Groupe 221" transform="translate(-1146 -456)">
+    <g id="Rectangle_88" data-name="Rectangle 88" class="cls-1" transform="translate(1192 532)">
+      <rect class="cls-4" width="78" height="43"/>
+      <rect class="cls-5" x="0.5" y="0.5" width="77" height="42"/>
+    </g>
+    <g id="Groupe_220" data-name="Groupe 220">
+      <g id="Groupe_215" data-name="Groupe 215">
+        <g id="Groupe_184" data-name="Groupe 184">
+          <path id="Tracé_189" data-name="Tracé 189" class="cls-2" d="M282.331,180.688h-3.39a5.151,5.151,0,0,0-5.153,5.15v11.253h83.074V185.838a5.154,5.154,0,0,0-5.153-5.15h-8.74v6.745a2.279,2.279,0,0,1-2.28,2.279h-4.8a2.277,2.277,0,0,1-2.278-2.279v-6.745H297.045v6.745a2.28,2.28,0,0,1-2.279,2.279h-4.805a2.277,2.277,0,0,1-2.278-2.279v-6.745Z" transform="translate(915.675 329.609)"/>
+          <path id="Tracé_190" data-name="Tracé 190" class="cls-2" d="M324.88,174.622h4.805V161.944H324.88v12.678Z" transform="translate(880.756 342.42)"/>
+          <path id="Tracé_191" data-name="Tracé 191" class="cls-2" d="M469.962,174.622h4.8V161.944h-4.8v12.678Z" transform="translate(781.599 342.42)"/>
+          <path id="Tracé_192" data-name="Tracé 192" class="cls-2" d="M275.3,288.783a5.194,5.194,0,0,0,3.644,1.509h72.768a5.153,5.153,0,0,0,5.153-5.152V242.529H273.788V285.14A5.194,5.194,0,0,0,275.3,288.783Zm64.839-42.8h11.89v10.579h-11.89Zm0,13.5h11.89v10.579h-11.89Zm-15.38-13.5h11.893v10.579H324.756Zm0,13.5h11.893v10.579H324.756Zm0,13.5h11.893v10.578H324.756Zm-15.377-27.009h11.893v10.579H309.378Zm0,13.5h11.893v10.579H309.378Zm0,13.5h11.893v10.578H309.378ZM294,245.986h11.893v10.579H294Zm0,13.5h11.893v10.579H294Zm0,13.5h11.893v10.578H294Zm-15.377-13.5h11.892v10.579H278.624Zm0,13.5h11.892v10.578H278.624Z" transform="translate(915.675 287.344)"/>
+        </g>
+        <g id="Ellipse_47" data-name="Ellipse 47" class="cls-3" transform="translate(1146 456)">
+          <circle class="cls-4" cx="84.5" cy="84.5" r="84.5"/>
+          <circle class="cls-5" cx="84.5" cy="84.5" r="84"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

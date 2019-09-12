@@ -38,6 +38,22 @@
 .iconeNav {
   width: 60%;
 }
+.iconeNavOK {
+  width: 60%;
+  border-radius: 50px;
+  background-color: #FBB062;
+  border-image-outset: white 2px solid;
+}
+.select {
+  width: 60%;
+  border-radius: 50px;
+  box-shadow: white 0px 0px 30px 1px;
+  background-color: white;
+}
+.iconeNavOK:hover {
+  box-shadow: white 0px 0px 30px 1px;
+  background-color: white;
+}
 .nav {
   width: 35%;
   display: flex;
@@ -79,6 +95,9 @@ input {
   border: 1px solid #FB8215;
   padding: 5px 68px 5px 68px;
 }
+.btnEssai:hover {
+  background-color: #FB8215;
+}
 a {
   text-decoration: none;
   font-size: 16px;
@@ -110,39 +129,50 @@ hr {
 /*------------ Cartes Clients ------------*/
 .cartesList {
   //font-family: 'Rubik', sans-serif;
-  width: 80%;
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 2%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 3%;
-  margin: auto;
+  justify-content: center;
 }
 .cartesClients{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height: 215px;
   margin-top: 28px;
   margin-right: 25px;
   margin-left: 25px;
-  border-radius: 0px 0px 6px 6px;
   border: 1px solid  #FBB062;
+  opacity: 0.7;
+}
+.cartesClients:hover {
+  background-color: #fb8215;
+  border: #fb8215 1px solid;
+  box-shadow: 0px 0px 6px 0px #d2b18b;
+  opacity: 1;
 }
 .imageClient > img {
-  width: 150px;
+  width: 200px;
   height: 112px;
-  object-fit: contain;
+  object-fit: cover;
   border-bottom: #FBB062 solid 1px;
+  background-color: white;
 }
 .nomEntreprise {
   font-size: 1em;
   font-weight: bold;
   text-align: left;
-  color: rgb(73, 73, 73);
+  color: #3d3d3d;
+  margin-top: 10px;
   margin-left: 5px;
   //padding-left: 10px;
+}
+.nomEntreprise:hover {
+  color: white;
 }
 .cartOne {
   margin-left: 10px;
@@ -150,12 +180,38 @@ hr {
 }
 .blockquote {
   //font-family: 'Rubik', sans-serif;
-  color: rgb(58, 58, 58);
+  color: rgb(61, 61, 61);
   font-size: 0.8em;
-  margin-top: 8px;
+  margin-top: 15px;
   margin-left: 15px;
   border-left: 1px solid #FBB062;
   padding-left: 7px;
+}
+.blockquote:hover {
+  border-left: 1px solid white;
+}
+.exportClients {
+  width: 450px;
+  height: 40px;
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: #fb8215 1px solid;
+  border-top: #fb8215 1px solid;
+}
+.buttonExport {
+  background-color: #FBB062;
+  border: none;
+  color: white;
+  padding: 3px 15px 3px 15px;
+  border: #fb8215 1px solid;
+  box-shadow: 0px 0px 6px 0px white;
+}
+.buttonExport:hover {
+  background-color: #fb8215;
 }
 
 
@@ -247,7 +303,7 @@ hr {
   }
   hr {
     width: 45px;
-    margin-top: -43px;
+    margin-top: -38px;
   }
   .containerSearch {
     width: 300px;

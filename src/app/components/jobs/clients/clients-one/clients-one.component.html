@@ -19,22 +19,19 @@
 
   <div class="nav">
     <div>
-      <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/home.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/stat.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/iconeClients.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/client.svg" class="iconeNavOK" class="select"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/iconeProspect.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/prospect.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/iconeAgenda.svg" class="iconeNav"/></a>
-    </div>
-    <div>
-      <a href="#" [routerLink]="'/parametres'"><img src="/assets/images/iconeParam.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/agenda.svg" class="iconeNavOK"/></a>
     </div>
   </div>
 
@@ -61,57 +58,86 @@
           <h3 class="nomSociete">Brioche Boulangerie</h3>
         </div>
       <div>
-        <h3 class="nomContact">Contact</h3>
+        <h3 class="nomContact">Informations de l'entreprise</h3>
       </div>
     </section>
 
-    <div class="conteneur">
-      <section class="containerLogoAdressBtn">
-        <article>
+    <div [@contactsAnimation]="state">
+      <section class="tout">
+        <article class="boutonClient">
           <div class="dashboard">
             <a href="#" [routerLink]="'/dashboardClient'" class="btnEssai">dashboard du client</a>
           </div>
-        </article>
-        <article>
-          <div class="logoSociete">
-            <div><img src="/assets/images/brioche.jpg"></div>
+          <div class="dashboard">
+            <a href="#" [routerLink]="'/updateClient'" class="btnModifier">modifier</a>
           </div>
-        </article>
-        <article>
-          <div class="adresse">
-            <div>adress</div>
-            <div>postalCode / city</div>
-            <div>country</div>
-          </div>
-        </article>
-        <article>
-          <div class="containerBtn">
-            <div>
-              <a href="#" [routerLink]="'/updateClient'" class="btnModifier">modifier</a>
-            </div>
-            <div>
-              <a href="#" [routerLink]="'/listClient'" class="btnSupprimer">supprimer</a>
-            </div>
+          <div class="dashboard">
+            <a href="#" [routerLink]="'/listClient'" class="btnSupprimer">supprimer</a>
           </div>
         </article>
       </section>
 
-      <section class="containerContact">
-        <article class="contact">
-          <div class="styleContact">name / firstname</div>
-          <div class="styleContact">tel</div>
-          <div class="styleContact">mail</div>
-          <div class="styleContact">job</div>
-          <div class="styleContact">department</div>
-          <div class="styleContact">details</div>
-          <div class="styleContact">interlocutor</div>
-          <div class="styleContact">createdAt</div>
-          <div class="styleContact">updatedAt</div>
-        </article>
-      </section>
+      <div class="conteneur">
+        <section>
+          <article>
+            <div class="logoSociete">
+              <div><img src="/assets/images/brioche.jpg"></div>
+            </div>
+          </article>
+          <article>
+            <div class="adresse" *ngFor="let client of clients">
+              <div class="descriptifClient">{{ client.adress }}</div>
+              <div class="descriptifClient">{{ client.postalCode }} {{ client.city}} - {{ client.country }}</div>
+
+              <div class="descriptifClient">{{ client.tel }}</div>
+              <div class="descriptifClient">{{ client.mail }}</div>
+            </div>
+          </article>
+          <article class="contact" class="blockquote" *ngFor="let client of clients">
+            <div class="styleContact">Activité : {{ client.activityArea }}</div>
+            <div class="styleContact">Créer le : 10/08/2019{{ client.createdDate }}</div>
+            <div class="styleContact">Modifié le : 29/08/2019{{ client.updatedDate }}</div>
+          </article>
+        </section>
+
+        <section class="containerContact">
+          <article class="containerPotentiel2">
+            <div class="stylePotentiel">Contactée ?</div>
+            <form>
+              <div class="radiobtn">
+                <input type="radio" id="oui" name="drone" value="oui"checked/>
+                <label for="oui">Oui</label>
+              </div>
+
+              <div class="radiobtn">
+                <input type="radio" id="non" name="drone" value="nony" />
+                <label for="non">Non</label>
+              </div>
+            </form>
+          </article>
+
+          <article class="containerPotentiel">
+            <div class="stylePotentiel">Potentiel ?</div>
+              <form>
+                <div class="radiobtn">
+                  <input type="radio" id="huey" name="drone" value="huey"checked/>
+                  <label for="huey">Faible</label>
+                </div>
+
+                <div class="radiobtn">
+                  <input type="radio" id="dewey" name="drone" value="dewey" />
+                  <label for="dewey">Moyen</label>
+                </div>
+
+                <div class="radiobtn">
+                  <input type="radio" id="louie" name="drone" value="louie" />
+                  <label for="louie">Fort</label>
+                </div>
+              </form>
+          </article>
+        </section>
+      </div>
     </div>
-
-
   </main>
 
 

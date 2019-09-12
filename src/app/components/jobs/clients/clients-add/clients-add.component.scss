@@ -46,6 +46,22 @@
   margin-top: 3.5%;
   margin-left: 11%;
 }
+.iconeNavOK {
+  width: 60%;
+  border-radius: 50px;
+  background-color: #FBB062;
+  border-image-outset: white 2px solid;
+}
+.select {
+  width: 60%;
+  border-radius: 50px;
+  box-shadow: white 0px 0px 30px 1px;
+  background-color: white;
+}
+.iconeNavOK:hover {
+  box-shadow: white 0px 0px 30px 1px;
+  background-color: white;
+}
 
 
 /////////////////// main ///////////////////
@@ -62,12 +78,12 @@
 }
 .categorieDashboard {
   margin-top: -150px;
-  margin-left: 1100px;
+  margin-left: 1055px;
 }
 hr {
   border: none;
   height: 1px;
-  width: 154px;
+  width: 149px;
   background-color: #BF5805;
   margin-top: -80px;
   margin-right: 0px;
@@ -76,16 +92,21 @@ hr {
 /*------------ Formulaire ------------*/
 
 .formulaire{
-  width: 400px;
+  width: 1000px;
   height: auto;
   display: flex;
   justify-content: center;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 8%;
   padding: 1.5rem;
   border: #FB8215 1px solid;
-  box-shadow: 0px 0px 10px 1px #c1a17e;
+  box-shadow: 0px 0px 5px 1px #c1a17e;
   border-radius: 0px 0px 20px 20px;
+}
+.formulaireDeux {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .champForm {
   width: 350px;
@@ -110,10 +131,12 @@ hr {
   padding: 4px 10px 4px 10px;
   margin-top: 40px;
 }
-
-
-
-
+.btnEnregistrer:hover {
+  background-color: #FB8215;
+}
+.messageErr {
+  font-size: 10px;
+}
 
 
 /*------------ Cartes Clients ------------*/
@@ -164,6 +187,15 @@ hr {
 
 /////////////////// footer ///////////////////
 
+.triangleBleuBas {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-right: 1600px solid transparent;
+  border-bottom: 49px solid #FB8215;
+  margin-top: 5%;
+}
+
 
 
 /******************** RESPONSIVE ********************/
@@ -183,16 +215,22 @@ hr {
     border-top: 90px solid #FB8215;
     border-left: 332px solid transparent;
   }
-  .athenaLogo {
-    width: 8%;
-    margin-top: 3%;
-    margin-left: 3%;
-  }
   .categorieDashboard {
-    margin-left: 700px;
+    margin-top: -90px;
+    margin-left: 655px;
+  }
+  .titreCategorie {
+    width: 250px;
+    text-align: center;
+    font-size: 2em;
   }
   hr {
-    width: 155px;
+    width: 110px;
+    margin-top: -56px;
+  }
+  .formulaire{
+    margin-top: 10%;
+
   }
   .triangleBleuBas {
     display: inline-block;
@@ -219,16 +257,25 @@ hr {
     border-left: 243px solid transparent;
   }
   .athenaLogo {
-    width: 18%;
-    margin-top: 5%;
-    margin-left: 5%;
+    width: 23%;
+    margin-top: -1%;
+    margin-left: -3%;
+  }
+  .nav {
+    visibility: hidden;
   }
   .categorieDashboard {
-    margin-top: -60px;
+    margin-top: -70px;
     margin-left: 150px;
   }
+  .titreCategorie {
+    width: 170px;
+    text-align: center;
+    font-size: 1.3em;
+  }
   hr {
-    width: 55px;
+    width: 45px;
+    margin-top: -38px;
   }
   .champForm {
     width: 280px;

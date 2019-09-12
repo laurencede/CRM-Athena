@@ -22,22 +22,19 @@
 
   <div class="nav">
     <div>
-      <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/home.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/stat.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/iconeClients.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/client.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/iconeProspect.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/prospect.svg" class="iconeNavOK" class="select"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/iconeAgenda.svg" class="iconeNav"/></a>
-    </div>
-    <div>
-      <a href="#" [routerLink]="'/parametres'"><img src="/assets/images/iconeParam.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/agenda.svg" class="iconeNavOK"/></a>
     </div>
   </div>
   <div class="bandeauTriangles">
@@ -68,7 +65,7 @@
     </article>
   </section>
 
-  <section>
+  <section [@contactsAnimation]="state">
     <article class="cartesList">
       <div class="cartesClients" [ngClass]="{blue: hover}">
         <div class="imageClient">

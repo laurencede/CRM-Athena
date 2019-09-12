@@ -2,11 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CountUpModule } from 'countup.js-angular2';
+import { ChartsModule } from 'ng2-charts';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import {ScheduleModule, AgendaService, DayService, WeekService, WorkWeekService, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+
+
 import { DashboardGeneralComponent } from './components/dashboard-general/dashboard-general.component';
 import { ConnexionComponent } from './components/connexion/connexion.component';
 import { HomeComponent } from './components/home/home.component';
@@ -24,6 +29,14 @@ import { ProspectsListComponent } from './components/jobs/prospects/prospects-li
 import { ProspectsOneComponent } from './components/jobs/prospects/prospects-one/prospects-one.component';
 import { ProspectsAddComponent } from './components/jobs/prospects/prospects-add/prospects-add.component';
 import { ProspectsUpdateComponent } from './components/jobs/prospects/prospects-update/prospects-update.component';
+import { ProjetsComponent } from './components/projets/projets.component';
+import { JournalComponent } from './components/journal/journal.component';
+import { ClientStatComponent } from './components/client-stat/client-stat.component';
+import { ClientContactComponent } from './components/client-contact/client-contact.component';
+import { AgendaLocalComponent } from './components/agenda-local/agenda-local.component';
+import { FilterPipe } from './filter.pipe';
+
+
 
 
 
@@ -48,6 +61,12 @@ import { ProspectsUpdateComponent } from './components/jobs/prospects/prospects-
     ProspectsOneComponent,
     ProspectsAddComponent,
     ProspectsUpdateComponent,
+    ProjetsComponent,
+    JournalComponent,
+    ClientStatComponent,
+    ClientContactComponent,
+    AgendaLocalComponent,
+    FilterPipe
 
   ],
   imports: [
@@ -56,9 +75,15 @@ import { ProspectsUpdateComponent } from './components/jobs/prospects/prospects-
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    ChartsModule,
+    CountUpModule,
+    LeafletModule.forRoot(),
+    ScheduleModule,
 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [AgendaService, DayService, WeekService, WorkWeekService, MonthService],
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }

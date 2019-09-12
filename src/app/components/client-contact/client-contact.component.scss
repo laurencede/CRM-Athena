@@ -1,0 +1,176 @@
+.page {
+  font-family: 'Rubik', sans-serif;
+}
+
+/////////////////// header ///////////////////
+
+
+.athenaLogo {
+  width: 10%;
+  margin-top: -1%;
+  margin-left: -1.5%;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.5;
+}
+
+.triangleDroit {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 160px solid #FB8215;
+  border-left: 800px solid transparent;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+}
+.triangleGauche {
+  display : inline-block;
+  height : 0;
+  width : 0;
+  border-top : 295px solid #860E04;
+  border-right : 1472px solid transparent;
+  position: relative;
+  z-index: 3;
+}
+
+/********* NAV *********/
+.iconeNav {
+  width: 60%;
+}
+.nav {
+  width: 35%;
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  z-index: 10;
+  margin-top: 3.5%;
+  margin-left: 11%;
+}
+.iconeNavOK {
+  width: 60%;
+  border-radius: 50px;
+  background-color: #FBB062;
+  border-image-outset: white 2px solid;
+}
+.iconeNavOK:hover {
+  box-shadow: white 0px 0px 30px 1px;
+  background-color: white;
+}
+.select {
+  width: 60%;
+  border-radius: 50px;
+  box-shadow: white 0px 0px 30px 1px;
+  background-color: white;
+}
+
+
+/********* MAIN  *********/
+
+.titreCategorie {
+  width: 420px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2em;
+  color: white;
+  padding: 4px 4px 4px 4px;
+  border:1px solid #BF5805;
+  background-color: #BF5805;
+  border-radius: 0px 6px 0px 6px;
+}
+.categorieDashboard {
+  margin-top: -150px;
+  margin-left: 1100px;
+}
+hr {
+  border: none;
+  height: 1px;
+  width: 154px;
+  background-color: #BF5805;
+  margin-top: -56px;
+  margin-right: 0px;
+}
+
+/*------------ Cartes Clients ------------*/
+.cartesList {
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cartOne {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.blockquote {
+  //font-family: 'Rubik', sans-serif;
+  color: rgb(61, 61, 61);
+  font-size: 0.8em;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-left: 1px solid #FBB062;
+  padding-left: 7px;
+}
+.contenuDashboard {
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.cartClient {
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: #FB8215 1px solid;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  margin-bottom: 40px;
+  background-color: #FB8215;
+  border-radius: 0px 80px 0px 0px;
+  box-shadow: 0px 0px 6px 0px #d2b18b;
+}
+.circlePicture {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: white 4px solid;
+  margin-bottom: 15px;
+  object-fit: cover;
+  margin-top: 15px;
+
+}
+.nomPrenom {
+  font-family: 'Rubik', sans-serif;
+  font-size: 17px;
+  font-weight: bold
+}
+.poste {
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+}
+.sepInfos {
+  width: 150px;
+  height: 1px;
+  background-color: #FB8215;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.detailPerson {
+  width: 300px;
+  background-color: white;
+  border-radius: 0px 150px 0px 0px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}

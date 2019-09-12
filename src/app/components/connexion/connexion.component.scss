@@ -1,37 +1,35 @@
-.main {
+.fondCouleur {
   font-family: 'Rubik', sans-serif;
-}
-.couleurFond {
-  width: 375px;
-  height: 700px;
   background-color: #FB8215;
+  height: 100vh;
 }
 .chouetteAthena {
-  width: 72%;
+  width: 35%;
   height: auto;
-
   opacity: 0.5;
 }
 .champForm {
-  width: 280px;
+  width: 300px;
   height: auto;
   color: white;
   border: 0;
-  border-bottom: 1px solid #FBB062;
+  border-bottom: 1px solid white;
   background-color: transparent;
   margin-bottom: 35px;
 }
 .connexion {
-  margin-top: 25%;
+  width: 300px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   text-align: center;
+  margin-top: -350px;
+  margin-left: 915px;
 }
 .btnEssai {
   cursor: pointer;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 13%;
 }
 a {
   text-decoration: none;
@@ -42,22 +40,35 @@ a {
   border: 1px solid white;
   padding: 5px 10px 5px 10px;
 }
+a:hover {
+  background-color: #860E04;
+}
+
+
 
 /////////////////// VERSION IPAD ///////////////////
-@media screen and (min-width: 1024px){
-  .couleurFond {
-    width: 1024px;
-    height: 768px;
-    background-color:#FB8215;
-  }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .chouetteAthena {
     width: 50%;
     height: auto;
     opacity: 0.5;
   }
   .connexion {
-    width: 300px;
-    margin-top: -27%;
-    margin-left: 60%;
+    margin-top: -250px;
+    margin-left: 625px;
   }
+}
+
+/////////////////// VERSION MOBILE ///////////////////
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .chouetteAthena {
+    width: 70%;
+    height: auto;
+    opacity: 0.5;
   }
+  .connexion {
+    margin: auto;
+    margin-top: 25%;
+  }
+}
+

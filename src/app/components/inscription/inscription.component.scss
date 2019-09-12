@@ -1,67 +1,87 @@
-.main {
+.fondCouleur {
   font-family: 'Rubik', sans-serif;
-}
-.couleurFond {
-  width: 375px;
-  height: 960px;
-  background-color: #FB8215;
+  background-color: #860E04;
+  height: 100vh;
 }
 .chouetteAthena {
-  width: 72%;
+  width: 35%;
   height: auto;
-
   opacity: 0.5;
 }
+h3 {
+  color: #860E04;
+  border-bottom: #860E04 1px solid;
+  width: 400px;
+  padding-bottom: 15px;
+}
 .champForm {
-  width: 280px;
+  width: 300px;
   height: auto;
-  font-family: 'Montserrat', sans-serif;
   color: white;
   border: 0;
-  border-bottom: 1px solid #FBB062;
+  border-bottom: 1px solid white;
   background-color: transparent;
   margin-bottom: 35px;
 }
 .connexion {
-  margin-top: 15%;
+  width: 300px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   text-align: center;
-}
-.containerEssaiGratuit {
-  height: 70px;
+  margin-top: -615px;
+  margin-left: 915px;
 }
 .btnEssai {
   cursor: pointer;
   text-align: center;
-  margin-top: 8%;
+  margin-top: 13%;
 }
 a {
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   text-align: center;
   color: white;
   border: 1px solid white;
   padding: 5px 10px 5px 10px;
 }
+a:hover {
+  background-color: #fb8215;
+}
+
+
 
 /////////////////// VERSION IPAD ///////////////////
-@media screen and (min-width: 1024px){
-  .couleurFond {
-    width: 1024px;
-    height: 768px;
-    background-color:#FB8215;
-  }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .chouetteAthena {
     width: 50%;
     height: auto;
     opacity: 0.5;
   }
   .connexion {
-    width: 300px;
-    margin-top: -47%;
-    margin-left: 60%;
+    margin-top: -500px;
+    margin-left: 625px;
   }
 }
+
+/////////////////// VERSION MOBILE ///////////////////
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .fondCouleur {
+    height: 100%;
+  }
+  .chouetteAthena {
+    width: 70%;
+    height: auto;
+    opacity: 0.5;
+  }
+  .connexion {
+    margin: auto;
+    margin-top: 15%;
+  }
+  .btnEssai {
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+}
+

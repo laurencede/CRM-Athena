@@ -19,22 +19,19 @@
 
   <div class="nav">
     <div>
-      <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/dashboardGeneral'"><img src="/assets/images/home.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/iconeStat.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/statistiques'"><img src="/assets/images/stat.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/iconeClients.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/listClient'"><img src="/assets/images/client.svg" class="iconeNavOK" class="select"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/iconeProspect.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/listProspects'"><img src="/assets/images/prospect.svg" class="iconeNavOK"/></a>
     </div>
     <div>
-      <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/iconeAgenda.svg" class="iconeNav"/></a>
-    </div>
-    <div>
-      <a href="#" [routerLink]="'/parametres'"><img src="/assets/images/iconeParam.svg" class="iconeNav"/></a>
+      <a href="#" [routerLink]="'/agenda'"><img src="/assets/images/agenda.svg" class="iconeNavOK"/></a>
     </div>
   </div>
 
@@ -59,39 +56,88 @@
   <section>
     <article>
       <div class="formulaire">
-        <form [method]="POST">
-          <label class="champLabel" for="name">Société</label><br>
-          <input class="champForm" type="text" formControlName="name"  required/><br>
-          <label class="champLabel" for="logotype">Logo de la société</label><br>
-          <input class="champForm" type="text" formControlName="logotype"/><br>
-          <label class="champLabel" for="tel">Téléphone</label><br>
-          <input class="champForm" type="text" formControlName="tel" required/><br>
-          <label class="champLabel" for="mail">Email</label><br>
-          <input class="champForm" type="text" formControlName="mail" required/><br>
-          <label class="champLabel" for="adress">Adresse</label><br>
-          <input class="champForm" type="text" formControlName="adress" required/><br>
-          <label class="champLabel" for="postalCode">Code Postal</label><br>
-          <input class="champForm" type="text" formControlName="postalCode" required/><br>
-          <label class="champLabel" for="city">Ville</label><br>
-          <input class="champForm" type="text" formControlName="city" required/><br>
-          <label class="champLabel" for="country">Pays</label><br>
-          <input class="champForm" type="text" formControlName="country" required/><br>
-          <label class="champLabel" for="detail">Commentaire</label><br>
-          <input class="champForm" type="text" formControlName="details" required/><br>
-          <label class="champLabel" for="activityArea">Secteur d'activité</label><br>
-          <input class="champForm" type="text" formControlName="activityArea" required/><br>
-          <label class="champLabel" for="text">Statut</label><br>
+        <form [formGroup]="reactForm" (ngSubmit)="onSubmit()" class="formulaireDeux">
+          <div>
+            <label class="champLabel" for="name">Société</label><br>
+            <input class="champForm" type="text" formControlName="name" required/><br>
+            <div *ngIf="!reactForm.controls['name'].valid" class="messageErr">SVP entrez un prénom</div>
+          </div>
 
-          <button class="btnEnregistrer">Enregistrer</button>
+          <div>
+            <label class="champLabel" for="logotype">Logo de la société</label><br>
+            <input class="champForm" type="text" formControlName="logotype"/><br>
+          </div>
+
+          <div>
+            <label class="champLabel" for="tel">Téléphone</label><br>
+            <input class="champForm" type="text" formControlName="tel" required/><br>
+            <div *ngIf="!reactForm.controls['tel'].valid" class="messageErr">SVP entrez un numéro de téléphone</div>
+          </div>
+
+          <div>
+            <label class="champLabel" for="mail">Email</label><br>
+            <input class="champForm" type="text" formControlName="mail" required/><br>
+            <div *ngIf="!reactForm.controls['mail'].valid" class="messageErr">SVP entrez un email</div>
+          </div>
+
+          <div>
+            <label class="champLabel" for="adress">Adresse</label><br>
+            <input class="champForm" type="text" formControlName="adress" required/><br>
+            <div *ngIf="!reactForm.controls['adress'].valid" class="messageErr">SVP entrez une adresse</div>
+          </div>
+
+          <div>
+            <label class="champLabel" for="postalCode">Code Postal</label><br>
+            <input class="champForm" type="text" formControlName="postalCode" required/><br>
+            <div *ngIf="!reactForm.controls['postalCode'].valid" class="messageErr">SVP entrez un code postal</div>
+          </div>
+
+          <div>
+            <label class="champLabel" for="city">Ville</label><br>
+            <input class="champForm" type="text" formControlName="city" required/><br>
+            <div *ngIf="!reactForm.controls['city'].valid" class="messageErr">SVP entrez une ville</div>
+          </div>
+
+          <div>
+            <label class="champLabel" for="country">Pays</label><br>
+            <input class="champForm" type="text" formControlName="country" required/><br>
+            <div *ngIf="!reactForm.controls['country'].valid" class="messageErr">SVP entrez un pays</div>
+          </div>
+
+          <div>
+            <label class="champLabel" for="details">Commentaire</label><br>
+            <input class="champForm" type="text" formControlName="details" /><br>
+            <div *ngIf="!reactForm.controls['details'].valid" class="messageErr">SVP entrez un numéro de téléphone</div>
+          </div>
+
+          <div>
+            <label class="champLabel" for="activityArea">Secteur d'activité</label><br>
+            <input class="champForm" type="text" formControlName="activityArea" required/><br>
+            <div *ngIf="!reactForm.controls['activityArea'].valid" class="messageErr">SVP entrez un numéro de téléphone</div>
+          </div>
+
+          <div>
+            <label class="champLabel" for="lead">Statut</label><br>
+            <input class="champForm" type="text" formControlName="lead"/><br>
+            <div *ngIf="!reactForm.controls['lead'].valid" class="messageErr">SVP entrez un numéro de téléphone</div>
+          </div>
+
+          <div>
+            <label class="champLabel" for="details">Commentaire</label><br>
+            <input class="champForm" type="text" formControlName="details" required/><br>
+            <div *ngIf="!reactForm.controls['details'].valid" class="messageErr">SVP entrez un numéro de téléphone</div>
+          </div>
+
+          <div>
+            <button class="btnEnregistrer" type="submit" [routerLink]="'/listClient'">Ajouter un client</button>
+          </div>
         </form>
       </div>
     </article>
-
   </section>
-
 </main>
 
-<footer>
+<footer >
   <div class="triangleBleuBas"></div>
 </footer>
 </body>

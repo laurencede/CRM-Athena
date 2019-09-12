@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #860e04;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_223" data-name="Groupe 223" transform="translate(-336 -456)">
+    <g id="Groupe_222" data-name="Groupe 222">
+      <g id="Groupe_195" data-name="Groupe 195">
+        <rect id="Rectangle_80" data-name="Rectangle 80" class="cls-1" width="13.53" height="34.908" transform="translate(406.122 531.797)"/>
+        <rect id="Rectangle_81" data-name="Rectangle 81" class="cls-1" width="13.53" height="14.336" transform="translate(387.694 552.37)"/>
+        <rect id="Rectangle_82" data-name="Rectangle 82" class="cls-1" width="13.53" height="28.98" transform="translate(424.543 537.725)"/>
+        <rect id="Rectangle_83" data-name="Rectangle 83" class="cls-1" width="13.53" height="40.119" transform="translate(443.033 526.586)"/>
+      </g>
+      <path id="Tracé_229" data-name="Tracé 229" class="cls-2" d="M405.161,245.44H326.5V195" transform="translate(56.026 321.565)"/>
+    </g>
+    <g id="Ellipse_44" data-name="Ellipse 44" class="cls-3" transform="translate(336 456)">
+      <circle class="cls-4" cx="84.5" cy="84.5" r="84.5"/>
+      <circle class="cls-5" cx="84.5" cy="84.5" r="84"/>
+    </g>
+  </g>
+</svg>
